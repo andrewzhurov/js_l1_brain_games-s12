@@ -1,0 +1,22 @@
+{
+  "name": "js_l1_brain_games-s12",
+  "version": "1.0.0",
+  "description": "A little pack of games. hexlet.io project to practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "brain-even": "./bin/brain-even.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/broose/js_l1_brain_games-s12.git"
+  },
+  "author": "Andrew Zhurov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/broose/js_l1_brain_games-s12/issues"
+  },
+  "homepage": "https://github.com/broose/js_l1_brain_games-s12#readme"
+}
