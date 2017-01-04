@@ -11,10 +11,10 @@
     "brain-even": "./bin/brain-even.js"
   },
   "dependencies" :
-  { "babel-cli" : "latest"
-  , "babel-core" : "latest"
-  , "babel-preset-env" : "latest"
-  , "babel-preset-stage-0" : "latest"
+  { "babel-cli" : "*"
+  , "babel-core" : "*"
+  , "babel-preset-env" : "*"
+  , "babel-preset-stage-0" : "*"
   },
   "repository": {
     "type": "git",
