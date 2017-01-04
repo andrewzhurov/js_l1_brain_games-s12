@@ -1,5 +1,5 @@
 install: 
-	npm install brain-games -g
+	npm install
 
 run:
 	npm run babel-node -- bin/$(G)
