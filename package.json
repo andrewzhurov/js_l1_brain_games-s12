@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel-node": "babel-node",
-    "flow": "flow"
+    "flow": "flow",
+    "eslint": "eslint"
   },
   "bin": {
     "brain-even": "./bin/brain-even.js"
@@ -18,6 +19,11 @@
   , "babel-preset-stage-0" : "*"
   , "babel-plugin-syntax-flow" : "*"
   , "babel-plugin-transform-flow-strip-types" : "*"  
+  , "babel-eslint" : "*"
+  , "eslint" : "*"
+  , "eslint-config-airbnb" : "*"
+  , "eslint-plugin-flowtype" : "*"
+  , "eslint-plugin-import" : "*"
   },
   "repository": {
     "type": "git",
