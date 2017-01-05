@@ -24,6 +24,7 @@
   , "eslint-config-airbnb" : "*"
   , "eslint-plugin-flowtype" : "*"
   , "eslint-plugin-import" : "*"
+  , "readline-sync" : "*"
   },
   "repository": {
     "type": "git",
