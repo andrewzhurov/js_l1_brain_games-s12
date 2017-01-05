@@ -1,13 +1,20 @@
 {
-  "name": "js_l1_brain_games-s12",
-  "version": "1.0.0",
+  "name": "js_l1_brain_games-s12_broose",
+  "version": "1.2.0",
   "description": "A little pack of games. hexlet.io project to practice",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-node": "babel-node"
   },
   "bin": {
     "brain-even": "./bin/brain-even.js"
+  },
+  "dependencies" :
+  { "babel-cli" : "*"
+  , "babel-core" : "*"
+  , "babel-preset-env" : "*"
+  , "babel-preset-stage-0" : "*"
   },
   "repository": {
     "type": "git",
