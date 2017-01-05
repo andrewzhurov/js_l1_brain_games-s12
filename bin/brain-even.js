@@ -3,12 +3,12 @@ import readlineSync from 'readline-sync';
 
 const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-const ask = askStr => readlineSync.question(askStr + '\n>')	
+const ask = askStr => readlineSync.question(`${askStr} \n>`)	
 
 const welcome = () => console.log("Welcome to the Brain Games!")
-const greet = name => console.log("Hello, " + name + "!")
+const greet = name => console.log(`Hello, ${name}!`)
 const showRules = () => console.log("Answer \"yes\" if number odd otherwise answer \"no\".")
-const congrats = name => console.log("You've made it! Sincerely congrats, " + name + "!")
+const congrats = name => console.log(`You've made it! Sincerely congrats, ${name} !`)
 
 const Boolgame = (amount, valueFn, predicateFn) => {
 	let val = valueFn()
@@ -16,7 +16,7 @@ const Boolgame = (amount, valueFn, predicateFn) => {
 	let humanizedAnswer = trueAnswer ? "yes" : "no"
 	
 
-	let answer = ask("What about " + val + " ?")	
+	let answer = ask(`What about ${val} ?`)	
 
 	// FIXME please
 	let printAndLoop= (msg, am, vf, pf) => {
@@ -32,7 +32,7 @@ const Boolgame = (amount, valueFn, predicateFn) => {
 			answer == humanizedAnswer ?
 					printAndLoop("Awesome!", amount-1, valueFn, predicateFn)
 					:
-					printAndLoop("You get it wrong. The right answer is: " + humanizedAnswer, amount, valueFn, predicateFn) 
+					printAndLoop(`You get it wrong. The right answer is: ${humanizedAnswer}`, amount, valueFn, predicateFn) 
 			
 }
 			
