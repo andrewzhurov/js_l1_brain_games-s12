@@ -4,6 +4,7 @@ plugins: [flowtype]
 
 env:
   node: true
+  es6: true
 
 parser: babel-eslint
 
@@ -11,7 +12,13 @@ parserOptions:
   ecmaVersion: 2017
   sourceType: module
 
+rules:
+  no-console: off
+  no-await-in-loop: off
+  no-confusing-arrow: off
+  import/prefer-default-export: off
+
 extends:
-  - 'airbnb/base'
+  - 'airbnb-base'
   - plugin:import/errors
   - plugin:import/warnings
