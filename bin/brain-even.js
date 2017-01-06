@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
-const actual = readlineSync.question('May I have your name? ')
+import { evenNumberGame } from '../src/games';
 
-console.log("Welcome to the Brain Games, " + actual + "!");
+evenNumberGame(3);
