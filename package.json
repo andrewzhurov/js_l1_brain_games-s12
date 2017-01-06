@@ -12,19 +12,21 @@
   "bin": {
     "brain-even": "./bin/brain-even.js"
   },
+  "dependencies" :
+  { "readline-sync" : "*"
+  },
   "devDependencies" :
   { "babel-cli" : "*"
   , "babel-core" : "*"
   , "babel-preset-env" : "*"
   , "babel-preset-stage-0" : "*"
   , "babel-plugin-syntax-flow" : "*"
-  , "babel-plugin-transform-flow-strip-types" : "*"  
+  , "babel-plugin-transform-flow-strip-types" : "*"
   , "babel-eslint" : "*"
   , "eslint" : "*"
   , "eslint-config-airbnb-base" : "*"
   , "eslint-plugin-flowtype" : "*"
   , "eslint-plugin-import" : "*"
-  , "readline-sync" : "*"
   },
   "repository": {
     "type": "git",
