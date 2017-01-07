@@ -1,11 +1,11 @@
-/* eslint consistent-return: "off" */
+  /* eslint consistent-return: "off" */
 
 import { ask } from './utils';
 
-export const quizGameBone = (amount, valueFn, checkFn) => {
-  const [val, nextValFn] = valueFn();
-  const trueAnswer = checkFn(val);
-  const answer = ask(`What about ${val} ?`);
+export const randomQuizBone = (amount: number, randomDataFn, represent, answerFn) => {
+  const data = randomDataFn();
+  const trueAnswer = answerFn(data);
+  const answer = ask(`What about ${represent(data)} ?`);
 
   if (amount === 0) {
     return true;
@@ -13,9 +13,9 @@ export const quizGameBone = (amount, valueFn, checkFn) => {
 
   if (answer === trueAnswer) {
     console.log('Awesome!');
-    quizGameBone(amount - 1, nextValFn, checkFn);
+    randomQuizBone(amount - 1, randomDataFn, represent, answerFn);
   } else {
     console.log(`You get it wrong. The right answer is: ${trueAnswer}`);
-    quizGameBone(amount, nextValFn, checkFn);
+    randomQuizBone(amount, randomDataFn, represent, answerFn);
   }
 };
