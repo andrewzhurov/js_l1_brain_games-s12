@@ -27,6 +27,8 @@
   , "eslint-config-airbnb-base" : "*"
   , "eslint-plugin-flowtype" : "*"
   , "eslint-plugin-import" : "*"
+  , "flow-bin" : "*"
+  , "flow-typed" : "*"
   },
   "repository": {
     "type": "git",
