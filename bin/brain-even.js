@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 // @flow
-import { evenNumberGame } from '../src/games';
+import { evenGame } from '../src/games';
+import bone from '../src/bone';
 
-evenNumberGame(3);
+bone('Tell me is it even or not.', evenGame);
