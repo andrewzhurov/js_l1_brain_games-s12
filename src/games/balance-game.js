@@ -1,5 +1,5 @@
 /* eslint no-else-return: "off", */
-import { rand } from './utils';
+import { rand } from '../utils';
 
 // It's so fucked
 // And not totally copypasted from @lazycoder, nah. (it is)
