@@ -9,3 +9,9 @@ publish:
 
 lint:
 	npm run eslint -- src test
+
+build:
+	rm -rf dist
+	npm run build
+
+auto_publish: install build publish
