@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // @flow
-import gcdGame from '../src/gcd-game';
-import bone from '../src/bone';
+import gcdGame from '../games/gcd-game';
+import bone from '../bone';
 
 bone('Pick a greater common divisor.', gcdGame);

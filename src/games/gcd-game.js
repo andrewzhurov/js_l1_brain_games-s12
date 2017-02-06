@@ -1,5 +1,5 @@
 /* eslint no-else-return: "off" */
-import { rand } from './utils';
+import { rand } from '../utils';
 
 const gcd = (d, a, b) => {
   if (a % d === 0 && b % d === 0) {

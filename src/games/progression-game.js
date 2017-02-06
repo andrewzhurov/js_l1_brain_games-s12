@@ -1,5 +1,5 @@
 /* eslint no-else-return: "off", */
-import { rand } from './utils';
+import { rand } from '../utils';
 
 // I know, nobody would like to see that :/
 const progression = (now, count, missedCount, step, out, missed) => {

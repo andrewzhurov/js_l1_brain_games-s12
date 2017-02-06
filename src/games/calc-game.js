@@ -1,5 +1,5 @@
 // @flow
-import { rand } from './utils';
+import { rand } from '../utils';
 
 export default () => {
   const a = rand(1, 200);

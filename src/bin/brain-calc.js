@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // @flow
-import calcGame from '../src/calc-game';
-import bone from '../src/bone';
+import calcGame from '../games/calc-game';
+import bone from '../bone';
 
 bone('A little calculation challenge.', calcGame);

@@ -1,16 +1,22 @@
 {
-  "name": "js_l1_brain_games-s12_broose",
-  "version": "1.2.0",
-  "description": "A little pack of games. hexlet.io project to practice",
+  "name": "broose_brain-games",
+  "version": "1.0.1",
+  "description": "A little pack of games. hexlet.io project to practice.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel-node": "babel-node",
     "flow": "flow",
-    "eslint": "eslint"
+    "eslint": "eslint",
+    "build": "babel src --out-dir dist",
+    "prepublish": "npm run build"
   },
   "bin": {
-    "brain-even": "./bin/brain-even.js"
+    "brain-even": "dist/bin/brain-even.js",
+    "brain-gcd": "dist/bin/brain-gcd.js",
+    "brain-calc": "dist/bin/brain-calc.js",
+    "brain-balance": "dist/bin/brain-balance.js",
+    "brain-progression": "dist/bin/brain-progression.js"
   },
   "dependencies" :
   { "readline-sync" : "*"
